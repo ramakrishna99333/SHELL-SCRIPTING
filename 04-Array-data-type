@@ -1,0 +1,12 @@
+#!/bin/bash
+
+Fruits=(Apple Mango Banana Orange)
+
+echo "All Fruits: ${Fruits[@]}"
+echo "Fruit at index 0: ${Fruits[0]}"
+echo "Fruit at index 1: ${Fruits[1]}"
+echo "Fruit at index 2: ${Fruits[2]}"
+echo "Fruit at index 3: ${Fruits[3]}"
+echo "Number of Fruits: ${#Fruits[@]}"
+echo "fruit at index 4: ${Fruits[4]}"
+
