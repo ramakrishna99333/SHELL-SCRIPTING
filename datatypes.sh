@@ -5,6 +5,12 @@ Num2=$2
 
 echo "The sum of $Num1 and $Num2 is: $(($Num1 + $Num2))"
 
+if [ -z "$Num1" ] || [ -z "$Num2" ]; then
+    echo "Error: Two numeric arguments are required."
+    exit 1
+fi
+
+
 echo "number of arguments: $#"
 echo "all arguments: $@"
 echo "all arguments: $*"
