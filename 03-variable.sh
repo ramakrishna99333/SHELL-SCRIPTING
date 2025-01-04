@@ -4,7 +4,7 @@ DATE=$(date)
 echo "add user name"
 read USER_NAME
 echo "add password"
-read PASSWORD
+read -s PASSWORD
 
 echo "The user name is: $USER_NAME"
 echo "The password is: $PASSWORD"
