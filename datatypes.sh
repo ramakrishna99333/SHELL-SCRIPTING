@@ -3,6 +3,11 @@
 Num1=$1
 Num2=$2
 
+if ! [[ "$Num1" =~ ^[0-9]+$ ]] || ! [[ "$Num2" =~ ^[0-9]+$ ]]; then
+    echo "Error: Both arguments must be numeric."
+    exit 1
+fi
+
 if [ -z "$Num1" ] || [ -z "$Num2" ]; then
     echo "Error: Two numeric arguments are required."
     exit 1
